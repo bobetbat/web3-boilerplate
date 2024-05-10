@@ -7,16 +7,6 @@ import { ProgressBar } from '../components/ProgressBar';
 import { useQuery } from '@apollo/client';
 import { useAccount } from 'wagmi';
 
-const apartment
-  // : Apartment 
-  = {
-  id: 1,
-  address: "123 Main St, Anytown, AN",
-  rooms: 3,
-  size: 120, // square meters
-  isFurnished: true,
-  amenities: ["pool", "gym", "parking"],
-};
 
 const Dashboard: React.FC = () => {
   const dispatch = useDispatch()

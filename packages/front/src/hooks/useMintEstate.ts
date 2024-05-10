@@ -3,17 +3,6 @@ import { useAccount, useWriteContract } from 'wagmi';
 import EstateToken from '../../../contracts/artifacts/contracts/EstateToken.sol/EstateToken.json'; // Adjust the path according to your project structure
 import { Hash } from '../types';
 
-
-interface Apartment {
-  id: number;
-  address: string;
-  rooms: number;
-  size: number; // in square meters
-  isFurnished: boolean;
-  amenities: string[];
-}
-
-
 type MintEstateTokenHook = {
   mint: (tokenURI: string) => Promise<void>;
   loading: boolean;
