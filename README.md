@@ -24,6 +24,8 @@ yarn contract:deploy:sepolia
 // run frontend
 yarn start:front
 ```
-
+# envs
+contracts: `packages/contracts/.env`
+front: `packages/front/.env.local`
 # Contribution
 Conventional commits: https://www.conventionalcommits.org/en/v1.0.0/
