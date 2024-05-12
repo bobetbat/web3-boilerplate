@@ -1,18 +1,28 @@
-# Development
+# install dependencies
 ```
-// install dependencies
 yarn
 yarn bootstrap
 ```
+# run compile contracts
+```
+yarn contracts:compile
+```
+# run local EVM node
+```
+yarn start:hardhat
+```
+# deploy contracts
+```
+// local EVM node
+yarn contract:deploy:local
 
+// sepolia testnet
+yarn contract:deploy:sepolia
 ```
-// run local node
-yarn dev:prep
+# run frontend
 ```
-
-```
-// compile and deploy contracts, run front 
-yarn dev:start
+// run frontend
+yarn start:front
 ```
 
 # Contribution
