@@ -5,7 +5,7 @@ yarn bootstrap
 ```
 # run compile contracts
 ```
-yarn contracts:compile
+yarn contract:compile
 ```
 # run local EVM node
 ```
