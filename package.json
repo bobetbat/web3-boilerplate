@@ -15,7 +15,9 @@
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^17.1.0",
+    "@openzeppelin/contracts": "^5.0.2",
     "conventional-changelog-cli": "^2.2.2",
+    "dotenv": "^16.4.5",
     "husky": "^8.0.0",
     "lerna": "^4.0.0"
   }
