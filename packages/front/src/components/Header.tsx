@@ -6,8 +6,6 @@ import Toolbar from '@mui/material/Toolbar';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { Button, Stack } from '@mui/material';
-// import { Description } from '@mui/icons-material';
-import { IconButton } from '@mui/material';
 
 export const Header: React.FC = () => {
   const router = useRouter();
@@ -20,16 +18,13 @@ export const Header: React.FC = () => {
         >
           <Button onClick={() => router.push('/')}>
             <Image
-              src="/logo-full.svg"
+              src="/logo.svg"
               width={130}
               height={50}
               alt="logo"
             />
           </Button>
           <Stack direction='row' gap={2}>
-            <Button onClick={() => router.push('/dashboard')} color="inherit" aria-label="add to shopping cart">
-              Dashboard
-            </Button>
             <ConnectButton />
           </Stack>
         </Toolbar>
