@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import { Button } from '@mui/material';
 import { useMintToken } from '../hooks/useMintToken';
 
+const testUrl = { url: 'https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png' }
 
 export const MintTokenButton: React.FC = () => {
   const [uploading, setUploading] = useState(false);
   const { mint, loading, error } = useMintToken()
 
-
-  const handleMint = async (object: Record<string, any>) => {
+  const handleMint = async (object: Record<string, any> = testUrl) => {
     try {
       setUploading(true);
 
@@ -30,7 +30,7 @@ export const MintTokenButton: React.FC = () => {
   };
 
   return (
-    <Button onClick={() => handleMint({})}>Mint</Button>
+    <Button variant='contained' size='large' onClick={handleMint}>Mint</Button>
   )
 }
 

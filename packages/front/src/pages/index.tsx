@@ -10,7 +10,7 @@ const Home: NextPage = () => {
 
   return (
     <Layout header footer>
-      <Stack direction="row" justifyContent="space-between">
+      <Stack direction="row" justifyContent="space-between" alignItems="center">
         <Typography variant='h3'>Mint erc404</Typography>
         <MintTokenButton />
       </Stack>
